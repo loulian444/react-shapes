@@ -4,37 +4,41 @@ const generateColorNumber = () => {
   return Math.floor(Math.random() * 255);
 };
 
+const generateRandomColor = () => {
+  return `rgb(${generateColorNumber()},${generateColorNumber()},${generateColorNumber()})`;
+}
+
 const App = () => {
   const shapes = [
     {
       id: 1,
       class: `circle`,
-      color: ``,
+      color: generateRandomColor(),
     },
     {
       id: 2,
       class: `circle`,
-      color: ``,
+      color: generateRandomColor(),
     },
     {
       id: 3,
       class: `circle`,
-      color: ``,
+      color: generateRandomColor(),
     },
     {
       id: 4,
       class: `square`,
-      color: ``,
+      color: generateRandomColor(),
     },
     {
       id: 5,
       class: `square`,
-      color: ``,
+      color: generateRandomColor(),
     },
     {
       id: 6,
       class: `square`,
-      color: ``,
+      color: generateRandomColor(),
     },
   ];
 
@@ -55,7 +59,7 @@ const ShapeRender = ({ shape }) => {
 
   const changeColor = () => {
     setShapeColor(
-      (shapeColor = `rgb(${generateColorNumber()},${generateColorNumber()},${generateColorNumber()})`)
+      (shapeColor = generateRandomColor())
     );
   };
 
