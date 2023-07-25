@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  border-radius: 50%;
+  border: solid 2px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  border: solid 2px;
+}
